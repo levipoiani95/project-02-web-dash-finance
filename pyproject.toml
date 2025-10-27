@@ -1,0 +1,21 @@
+[project]
+name = "project-02-web-dash-finance"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "levipoiani95",email = "levipoiani95@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit (>=1.50.0,<2.0.0)",
+    "yfinance (>=0.2.66,<0.3.0)"
+]
+
+[tool.poetry]
+packages = [{include = "project_02_web_dash_finance", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
