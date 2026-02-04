@@ -31,12 +31,18 @@ This project was developed for technical portfolio purposes, focusing on demonst
 <img width="592" height="382" alt="01" src="https://github.com/user-attachments/assets/35663f43-7071-4b06-b0c0-47aa0a73d922" />
 
 #### 2. After entering the main page, select the tickers that you want to show on chart.
-> [!CAUTION]
+> [!WARNING]
 > Don't select all tickets, because the page may become slow and take a long time to load.
-<img width="1153" height="574" alt="02" src="https://github.com/user-attachments/assets/3867143e-ac9b-4d4c-9c65-67eee08191ac" />
+<img width="1153" height="574" alt="02" src="https://github.com/user-attachments/assets/22e2162e-8723-431d-8d09-07d83d0c45d4" />
 
-#### 3. After
-<img width="1158" height="574" alt="image" src="https://github.com/user-attachments/assets/ce6bdbdd-9253-44a4-bc3f-19e4714a4d94" />
+#### 3. Now, select the period that you want to show.
+<img width="1062" height="558" alt="03" src="https://github.com/user-attachments/assets/ab033bfe-de19-4a50-a2bd-dc3fa86ef25f" />
+
+> [!NOTE]
+> After selecting some tickets, the percentage of the tickets's growth or decline will be displayed at the bottom of page. Note that if ticket was created during the chosen period, the percentage of growth or decline will not be displayed.
+
+
+
 
 
 
