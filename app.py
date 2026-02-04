@@ -40,7 +40,7 @@ The graph to be generated represents the price behavior of Brazilian stocks from
 st.sidebar.header("Stocks Filters") #titulo da sidebar
 
 #filtro de ações
-lista_acoes = st.sidebar.multiselect("Choose which action(s) to view.:", dados.columns)
+lista_acoes = st.sidebar.multiselect("Choose which ticket(s) to view.:", dados.columns)
 if lista_acoes:
     dados=dados[lista_acoes]
     if len(lista_acoes)==1:
