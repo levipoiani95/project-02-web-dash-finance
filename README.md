@@ -14,7 +14,7 @@ The project was developed in Visual Studio Code (VSCode), following best practic
 - Yfinance (financial data)
 - Pandas (data manipulation and analysis)
 - NumPy (numerical operations)
-- Datetime e math (date and calculations processing)
+- Datetime and math (date and calculations processing)
 
 
 ## ⚙️Demonstrated skills
@@ -40,6 +40,7 @@ This project was developed for technical portfolio purposes, focusing on demonst
 
 > [!NOTE]
 > After selecting some tickets, the percentage of the tickets's growth or decline will be displayed at the bottom of page. Note that if ticket was created during the chosen period, the percentage of growth or decline will not be displayed.
+
 
 
 
