@@ -32,7 +32,7 @@ st.write("""
 # Welcome! 
 ### This is a Dashboard about the prices of the main stocks in Brazil 
 ###### Developed por Levi Poiani          
-The graph to be generated represents the price behavior of Brazilian stocks from 2010 to 2024.** 
+The graph to be generated represents the price behavior of Brazilian stocks from 2010 to 2024. 
 """) # markdown
 
 #FILTROS - preparação das visualizações 
@@ -40,7 +40,7 @@ The graph to be generated represents the price behavior of Brazilian stocks from
 st.sidebar.header("Stocks Filters") #titulo da sidebar
 
 #filtro de ações
-lista_acoes = st.sidebar.multiselect("Escolha qual ou quais ações para visualizar:", dados.columns)
+lista_acoes = st.sidebar.multiselect("Choose which action(s) to view.:", dados.columns)
 if lista_acoes:
     dados=dados[lista_acoes]
     if len(lista_acoes)==1:
@@ -50,7 +50,7 @@ if lista_acoes:
 #filtro de datas
 data_inicial = dados.index.min().to_pydatetime()
 data_final = dados.index.max().to_pydatetime()
-intervalo_data = st.sidebar.slider("Selecione o período desejado",
+intervalo_data = st.sidebar.slider("Select the desired period",
                                    min_value=data_inicial,
                                    max_value=data_final,
                                    value=(data_inicial, data_inicial),
@@ -96,19 +96,18 @@ total_final_carteira = sum(carteira)
 perfomance_carteira = total_final_carteira/total_inicial_carteira-1
 
 if perfomance_carteira > 0:
-    texto_perfomance_carteira = f"Performance da carteira com todos os ativos : :green[{perfomance_carteira:.1%}]"
+    texto_perfomance_carteira = f"Portfolio performance across all assets : :green[{perfomance_carteira:.1%}]"
 elif perfomance_carteira < 0:
-    texto_perfomance_carteira = f"Performance da carteira com todos os ativos : :red[{perfomance_carteira:.1%}]"
+    texto_perfomance_carteira = f"Portfolio performance across all assets : :red[{perfomance_carteira:.1%}]"
 elif perfomance_carteira == 0:
-    texto_perfomance_carteira = f"Performance da carteira com todos os ativos : :blue[{perfomance_carteira:.1%}]"
+    texto_perfomance_carteira = f"Portfolio performance across all assets : :blue[{perfomance_carteira:.1%}]"
 else:
-    texto_perfomance_carteira = f"Performance da carteira com todos os ativos : :gray[{perfomance_carteira:.1%}]"
+    texto_perfomance_carteira = f"Portfolio performance across all assets : :gray[{perfomance_carteira:.1%}]"
     
 
 st.write(f"""
-## Performance dos Ativos
-Essa foi a perfomance de cada ativo no período selecionado:
-
+## Asset Performance
+This was the performance of each asset during the selected period:
 {texto_performance_ativos}         
 {texto_perfomance_carteira}
 """)
