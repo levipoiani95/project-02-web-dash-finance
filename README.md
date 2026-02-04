@@ -25,6 +25,16 @@ O projeto foi desenvolvido no Visual Studio Code (VSCode), seguindo boas prátic
 - Pensamento analítico aplicado a dados de mercado
 
 Projeto desenvolvido para fins de portfólio técnico, com foco em demonstrar habilidades práticas em Python, Streamlit e visualização de dados financeiros.
-## 🔗 Link para acessar a dashboard 
-https://project-02-web-dash-finance.streamlit.app/
+## 🔗 Tutorial and Link to acces my dashboard - Follow the arrow
+### 🌐 https://project-02-web-dash-finance.streamlit.app/
+#### 1. Wake up page clicking on blue button, if necessary:
+<img width="592" height="382" alt="01" src="https://github.com/user-attachments/assets/35663f43-7071-4b06-b0c0-47aa0a73d922" />
+
+#### 2. After entering the main page, select the tickers that you want to show on chart.
+> [!CAUTION]
+> Don't select all tickets, because the page may become slow and take a long time to load.
+<img width="1094" height="568" alt="02" src="https://github.com/user-attachments/assets/a7629ef9-747f-4d00-8ded-0105ef17f9cd" />
+
+
+
 
