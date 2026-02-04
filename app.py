@@ -80,7 +80,7 @@ for i, acao in enumerate(lista_acoes):
 
     if math.isnan(performance_ativo):
     #No markdown texto eh pintado: :cor[texto]
-        texto_performance_ativos = texto_performance_ativos + f"  \n{acao} : :gray[Não existe nesse período]"
+        texto_performance_ativos = texto_performance_ativos + f"  \n{acao} : :gray[It does not exist during the period selected]"
 
     if performance_ativo > 0:
     #No markdown texto eh pintado: :cor[texto]
