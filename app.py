@@ -29,16 +29,15 @@ dados = carregar_dados(acoes)
 
 #cria a interface do streamlit
 st.write("""
-###### Desenvolvida por Levi Poiani   
-# Bem-vindo! 
-### Essa é a Dashboard Preço de Ações do Brasil 
-         
-O gráfico abaixo representa a o comportamento do preço das **ações brasileiras de 2010 a 2024** 
+# Welcome! 
+### This is a Dashboard about the prices of the main stocks in Brazil 
+###### Developed por Levi Poiani          
+The graph to be generated represents the price behavior of Brazilian stocks from 2010 to 2024.** 
 """) # markdown
 
 #FILTROS - preparação das visualizações 
 
-st.sidebar.header("Filtros") #titulo da sidebar
+st.sidebar.header("Stocks Filters") #titulo da sidebar
 
 #filtro de ações
 lista_acoes = st.sidebar.multiselect("Escolha qual ou quais ações para visualizar:", dados.columns)
